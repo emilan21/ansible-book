@@ -4,7 +4,7 @@
     copy: src=wordpress.zip dest=/tmp/wordpress.zip
 
   - name: Unzip WordPress
-    unarchive: src=/tmp/wordpress.zip dest=/tmp remote_src=yes creates=/tmp/wordpress/wp-settings.php
+    unarchive: src=/tmp/wordpress.zip dest=/tmp copy=no creates=/tmp/wordpress/wp-settings.php
 
   - name: Create project folder
     file: dest=/var/www/{{wp_domain}} state=directory
