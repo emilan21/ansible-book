@@ -10,10 +10,10 @@
 - name: Install PHP
   apt: name={{item}} state=installed
   with_items:
-        - php7.1
+        - php
         - php7.1-fpm
-        - php7.1-mysql
-        - php7.1-xml
+        - php-mysql
+        - php-xml
 
 - name: Remove apache2
   apt: name=apache2 state=removed
