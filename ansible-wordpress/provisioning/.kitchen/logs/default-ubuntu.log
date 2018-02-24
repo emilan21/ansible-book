@@ -1,0 +1,153 @@
+I, [2018-02-23T18:44:07.556248 #52117]  INFO -- default-ubuntu: -----> Converging <default-ubuntu>...
+I, [2018-02-23T18:44:07.556717 #52117]  INFO -- default-ubuntu: Preparing files for transfer
+I, [2018-02-23T18:44:07.556783 #52117]  INFO -- default-ubuntu: Preparing playbook
+I, [2018-02-23T18:44:07.556977 #52117]  INFO -- default-ubuntu: Preparing inventory
+I, [2018-02-23T18:44:07.557077 #52117]  INFO -- default-ubuntu: Preparing modules
+I, [2018-02-23T18:44:07.557194 #52117]  INFO -- default-ubuntu: nothing to do for modules
+I, [2018-02-23T18:44:07.557282 #52117]  INFO -- default-ubuntu: Preparing roles
+I, [2018-02-23T18:44:07.587196 #52117]  INFO -- default-ubuntu: Preparing ansible.cfg file
+I, [2018-02-23T18:44:07.587359 #52117]  INFO -- default-ubuntu: Empty ansible.cfg generated
+I, [2018-02-23T18:44:07.587448 #52117]  INFO -- default-ubuntu: Preparing group_vars
+I, [2018-02-23T18:44:07.587558 #52117]  INFO -- default-ubuntu: nothing to do for group_vars
+I, [2018-02-23T18:44:07.587612 #52117]  INFO -- default-ubuntu: Preparing additional_copy_path
+I, [2018-02-23T18:44:07.587743 #52117]  INFO -- default-ubuntu: Preparing host_vars
+I, [2018-02-23T18:44:07.587871 #52117]  INFO -- default-ubuntu: nothing to do for host_vars
+I, [2018-02-23T18:44:07.587945 #52117]  INFO -- default-ubuntu: Preparing hosts file
+I, [2018-02-23T18:44:07.588057 #52117]  INFO -- default-ubuntu: Preparing spec
+I, [2018-02-23T18:44:07.588175 #52117]  INFO -- default-ubuntu: nothing to do for spec
+I, [2018-02-23T18:44:07.588225 #52117]  INFO -- default-ubuntu: Preparing library plugins
+I, [2018-02-23T18:44:07.588342 #52117]  INFO -- default-ubuntu: nothing to do for library plugins
+I, [2018-02-23T18:44:07.588391 #52117]  INFO -- default-ubuntu: Preparing callback plugins
+I, [2018-02-23T18:44:07.588509 #52117]  INFO -- default-ubuntu: nothing to do for callback plugins
+I, [2018-02-23T18:44:07.588558 #52117]  INFO -- default-ubuntu: Preparing filter_plugins
+I, [2018-02-23T18:44:07.588679 #52117]  INFO -- default-ubuntu: nothing to do for filter_plugins
+I, [2018-02-23T18:44:07.588729 #52117]  INFO -- default-ubuntu: Preparing lookup_plugins
+I, [2018-02-23T18:44:07.588877 #52117]  INFO -- default-ubuntu: nothing to do for lookup_plugins
+I, [2018-02-23T18:44:07.588963 #52117]  INFO -- default-ubuntu: Preparing ansible vault password
+I, [2018-02-23T18:44:07.589074 #52117]  INFO -- default-ubuntu: Preparing additional_ssh_private_keys
+I, [2018-02-23T18:44:07.589147 #52117]  INFO -- default-ubuntu: nothing to do for additional_ssh_private_keys
+I, [2018-02-23T18:44:07.589194 #52117]  INFO -- default-ubuntu: Finished Preparing files for transfer
+I, [2018-02-23T18:44:07.589432 #52117]  INFO -- default-ubuntu: Installing ansible, will try to determine platform os
+I, [2018-02-23T18:44:08.115349 #52117]  INFO -- default-ubuntu: Transferring files to <default-ubuntu>
+I, [2018-02-23T18:44:20.864848 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:20.865240 #52117]  INFO -- default-ubuntu: PLAY [all] *********************************************************************
+I, [2018-02-23T18:44:20.910762 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:20.911201 #52117]  INFO -- default-ubuntu: TASK [Gathering Facts] *********************************************************
+I, [2018-02-23T18:44:22.254341 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:22.272070 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:22.272433 #52117]  INFO -- default-ubuntu: TASK [mheap.common : Install common required packages] *************************
+I, [2018-02-23T18:44:23.230211 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost] => (item=[u'unzip'])[0m
+I, [2018-02-23T18:44:23.245323 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:23.245679 #52117]  INFO -- default-ubuntu: TASK [mheap.php : Add the ondrej PHP PPA] **************************************
+I, [2018-02-23T18:44:23.912518 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:23.920880 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:23.921198 #52117]  INFO -- default-ubuntu: TASK [mheap.php : Update the apt cache] ****************************************
+I, [2018-02-23T18:44:31.136454 #52117]  INFO -- default-ubuntu: [0;33mchanged: [localhost][0m
+I, [2018-02-23T18:44:31.146309 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:31.146669 #52117]  INFO -- default-ubuntu: TASK [mheap.php : Install PHP] *************************************************
+I, [2018-02-23T18:44:31.929689 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost] => (item=[u'php7.1', u'php7.1-fpm', u'php7.1-mysql', u'php7.1-xml'])[0m
+I, [2018-02-23T18:44:31.945616 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:31.945709 #52117]  INFO -- default-ubuntu: TASK [mheap.php : Remove apache2] **********************************************
+I, [2018-02-23T18:44:32.668883 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:32.678129 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:32.678183 #52117]  INFO -- default-ubuntu: TASK [mheap.mysql : Install MySQL] *********************************************
+I, [2018-02-23T18:44:33.422993 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost] => (item=[u'mysql-server', u'python-mysqldb'])[0m
+I, [2018-02-23T18:44:33.432843 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:33.433335 #52117]  INFO -- default-ubuntu: TASK [mheap.mysql : Generate new root password] ********************************
+I, [2018-02-23T18:44:33.972600 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:33.989516 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:33.990060 #52117]  INFO -- default-ubuntu: TASK [mheap.mysql : Remove anonymous users] ************************************
+I, [2018-02-23T18:44:34.025083 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost][0m
+I, [2018-02-23T18:44:34.033670 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:34.033715 #52117]  INFO -- default-ubuntu: TASK [mheap.mysql : Remove test database] **************************************
+I, [2018-02-23T18:44:34.066094 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost][0m
+I, [2018-02-23T18:44:34.074809 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:34.074875 #52117]  INFO -- default-ubuntu: TASK [mheap.mysql : Update root password] **************************************
+I, [2018-02-23T18:44:34.115383 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost] => (item=default-ubuntu) [0m
+I, [2018-02-23T18:44:34.126236 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost] => (item=127.0.0.1) [0m
+I, [2018-02-23T18:44:34.133205 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost] => (item=::1) [0m
+I, [2018-02-23T18:44:34.140215 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost] => (item=localhost) [0m
+I, [2018-02-23T18:44:34.158764 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:34.158857 #52117]  INFO -- default-ubuntu: TASK [mheap.mysql : Output new root password] **********************************
+I, [2018-02-23T18:44:34.191113 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost][0m
+I, [2018-02-23T18:44:34.201270 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:34.201313 #52117]  INFO -- default-ubuntu: TASK [mheap.mysql : Create my.cnf] *********************************************
+I, [2018-02-23T18:44:34.234307 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost][0m
+I, [2018-02-23T18:44:34.247369 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:34.247478 #52117]  INFO -- default-ubuntu: TASK [mheap.nginx : Install nginx] *********************************************
+I, [2018-02-23T18:44:34.977149 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:34.994745 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:34.994842 #52117]  INFO -- default-ubuntu: TASK [mheap.nginx : Start nginx] ***********************************************
+I, [2018-02-23T18:44:35.598640 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:35.607163 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:35.607232 #52117]  INFO -- default-ubuntu: TASK [mheap.nginx : Create nginx config] ***************************************
+I, [2018-02-23T18:44:36.571435 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:36.588775 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:36.588870 #52117]  INFO -- default-ubuntu: TASK [mheap.wordpress : Copy wordpress.zip into tmp] ***************************
+I, [2018-02-23T18:44:37.169634 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:37.183161 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:37.183253 #52117]  INFO -- default-ubuntu: TASK [mheap.wordpress : Unzip WordPress] ***************************************
+I, [2018-02-23T18:44:37.286242 #52117]  INFO -- default-ubuntu: [0;36mskipping: [localhost][0m
+I, [2018-02-23T18:44:37.295493 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:37.295550 #52117]  INFO -- default-ubuntu: TASK [mheap.wordpress : Create project folder] *********************************
+I, [2018-02-23T18:44:37.566883 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:37.579593 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:37.579954 #52117]  INFO -- default-ubuntu: TASK [mheap.wordpress : Copy WordPress files] **********************************
+I, [2018-02-23T18:44:37.871306 #52117]  INFO -- default-ubuntu: [0;32mok: [localhost][0m
+I, [2018-02-23T18:44:37.887860 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:37.887969 #52117]  INFO -- default-ubuntu: TASK [mheap.wordpress : Create WordPress MySQL database] ***********************
+I, [2018-02-23T18:44:38.497720 #52117]  INFO -- default-ubuntu: [0;31mfatal: [localhost]: FAILED! => {"changed": false, "msg": "unable to find /home/vagrant/.my.cnf. Exception message: (1045, \"Access denied for user 'root'@'localhost' (using password: NO)\")"}[0m
+I, [2018-02-23T18:44:38.503507 #52117]  INFO -- default-ubuntu: 	to retry, use: --limit @/tmp/kitchen/playbook.retry
+I, [2018-02-23T18:44:38.503938 #52117]  INFO -- default-ubuntu: 
+I, [2018-02-23T18:44:38.504245 #52117]  INFO -- default-ubuntu: PLAY RECAP *********************************************************************
+I, [2018-02-23T18:44:38.504579 #52117]  INFO -- default-ubuntu: [0;31mlocalhost[0m                  : [0;32mok=14  [0m [0;33mchanged=1   [0m unreachable=0    [0;31mfailed=1   [0m
+I, [2018-02-23T18:44:38.504752 #52117]  INFO -- default-ubuntu: 
+E, [2018-02-23T18:44:38.605103 #52117] ERROR -- default-ubuntu: Converge failed on instance <default-ubuntu>.
+E, [2018-02-23T18:44:38.605230 #52117] ERROR -- default-ubuntu: ------Exception-------
+E, [2018-02-23T18:44:38.605259 #52117] ERROR -- default-ubuntu: Class: Kitchen::ActionFailed
+E, [2018-02-23T18:44:38.605282 #52117] ERROR -- default-ubuntu: Message: SSH exited (2) for command: [          
+          
+          ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules          /tmp/kitchen/playbook.yml
+]
+E, [2018-02-23T18:44:38.605304 #52117] ERROR -- default-ubuntu: ----------------------
+E, [2018-02-23T18:44:38.605325 #52117] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2018-02-23T18:44:38.605346 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/provisioner/base.rb:91:in `rescue in call'
+E, [2018-02-23T18:44:38.605368 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/provisioner/base.rb:67:in `call'
+E, [2018-02-23T18:44:38.605390 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:393:in `block in converge_action'
+E, [2018-02-23T18:44:38.605412 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-02-23T18:44:38.605448 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-02-23T18:44:38.605473 #52117] ERROR -- default-ubuntu: /usr/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2018-02-23T18:44:38.605510 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:497:in `action'
+E, [2018-02-23T18:44:38.605536 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:389:in `converge_action'
+E, [2018-02-23T18:44:38.605558 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-02-23T18:44:38.605580 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `each'
+E, [2018-02-23T18:44:38.605602 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-02-23T18:44:38.605625 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2018-02-23T18:44:38.605647 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-02-23T18:44:38.605669 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-02-23T18:44:38.605692 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-02-23T18:44:38.605714 #52117] ERROR -- default-ubuntu: ----End Backtrace-----
+E, [2018-02-23T18:44:38.605735 #52117] ERROR -- default-ubuntu: ---Nested Exception---
+E, [2018-02-23T18:44:38.605756 #52117] ERROR -- default-ubuntu: Class: Kitchen::Transport::SshFailed
+E, [2018-02-23T18:44:38.605776 #52117] ERROR -- default-ubuntu: Message: SSH exited (2) for command: [          
+          
+          ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules          /tmp/kitchen/playbook.yml
+]
+E, [2018-02-23T18:44:38.605798 #52117] ERROR -- default-ubuntu: ----------------------
+E, [2018-02-23T18:44:38.605819 #52117] ERROR -- default-ubuntu: ------Backtrace-------
+E, [2018-02-23T18:44:38.605839 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/provisioner/base.rb:91:in `rescue in call'
+E, [2018-02-23T18:44:38.605861 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/provisioner/base.rb:67:in `call'
+E, [2018-02-23T18:44:38.605882 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:393:in `block in converge_action'
+E, [2018-02-23T18:44:38.605904 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-02-23T18:44:38.605933 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-02-23T18:44:38.605957 #52117] ERROR -- default-ubuntu: /usr/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2018-02-23T18:44:38.605978 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:497:in `action'
+E, [2018-02-23T18:44:38.606028 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:389:in `converge_action'
+E, [2018-02-23T18:44:38.606055 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-02-23T18:44:38.606078 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `each'
+E, [2018-02-23T18:44:38.606100 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-02-23T18:44:38.606122 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2018-02-23T18:44:38.606144 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-02-23T18:44:38.606166 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-02-23T18:44:38.606188 #52117] ERROR -- default-ubuntu: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-02-23T18:44:38.606213 #52117] ERROR -- default-ubuntu: ----End Backtrace-----

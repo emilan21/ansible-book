@@ -1,0 +1,85 @@
+I, [2018-02-23T18:44:07.419150 #52117]  INFO -- Kitchen: -----> Starting Kitchen (v1.20.0)
+I, [2018-02-23T18:44:07.556151 #52117]  INFO -- Kitchen: -----> Converging <default-ubuntu>...
+E, [2018-02-23T18:44:38.607234 #52117] ERROR -- Kitchen: ------Exception-------
+E, [2018-02-23T18:44:38.607280 #52117] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2018-02-23T18:44:38.607308 #52117] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Converge failed on instance <default-ubuntu>.  Please see .kitchen/logs/default-ubuntu.log for more details
+E, [2018-02-23T18:44:38.607333 #52117] ERROR -- Kitchen: ----------------------
+E, [2018-02-23T18:44:38.607358 #52117] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-02-23T18:44:38.607384 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:183:in `report_errors'
+E, [2018-02-23T18:44:38.607410 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:174:in `run_action'
+E, [2018-02-23T18:44:38.607435 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command/action.rb:36:in `block in call'
+E, [2018-02-23T18:44:38.607462 #52117] ERROR -- Kitchen: /usr/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2018-02-23T18:44:38.607487 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2018-02-23T18:44:38.607518 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/cli.rb:52:in `perform'
+E, [2018-02-23T18:44:38.607548 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/cli.rb:193:in `block (2 levels) in <class:CLI>'
+E, [2018-02-23T18:44:38.607598 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2018-02-23T18:44:38.607626 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-02-23T18:44:38.607652 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2018-02-23T18:44:38.607678 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2018-02-23T18:44:38.607714 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2018-02-23T18:44:38.607741 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2018-02-23T18:44:38.607766 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/bin/kitchen:13:in `<top (required)>'
+E, [2018-02-23T18:44:38.607793 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/bin/kitchen:23:in `load'
+E, [2018-02-23T18:44:38.607819 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/bin/kitchen:23:in `<top (required)>'
+E, [2018-02-23T18:44:38.607844 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-02-23T18:44:38.607870 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-02-23T18:44:38.607906 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-02-23T18:44:38.607938 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-02-23T18:44:38.607965 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-02-23T18:44:38.607990 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-02-23T18:44:38.608031 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-02-23T18:44:38.608059 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-02-23T18:44:38.608084 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-02-23T18:44:38.608109 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-02-23T18:44:38.608142 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-02-23T18:44:38.608166 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-02-23T18:44:38.608192 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-02-23T18:44:38.608218 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/bin/bundle:23:in `load'
+E, [2018-02-23T18:44:38.608243 #52117] ERROR -- Kitchen: /home/emilan/.gem/ruby/2.5.0/bin/bundle:23:in `<main>'
+E, [2018-02-23T18:44:38.608267 #52117] ERROR -- Kitchen: ----End Backtrace-----
+E, [2018-02-23T18:44:38.608290 #52117] ERROR -- Kitchen: -Composite Exception--
+E, [2018-02-23T18:44:38.608314 #52117] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
+E, [2018-02-23T18:44:38.608339 #52117] ERROR -- Kitchen: Message: Converge failed on instance <default-ubuntu>.  Please see .kitchen/logs/default-ubuntu.log for more details
+E, [2018-02-23T18:44:38.608365 #52117] ERROR -- Kitchen: ----------------------
+E, [2018-02-23T18:44:38.608395 #52117] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-02-23T18:44:38.608420 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/provisioner/base.rb:91:in `rescue in call'
+E, [2018-02-23T18:44:38.608445 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/provisioner/base.rb:67:in `call'
+E, [2018-02-23T18:44:38.608469 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:393:in `block in converge_action'
+E, [2018-02-23T18:44:38.608498 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-02-23T18:44:38.608523 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-02-23T18:44:38.608550 #52117] ERROR -- Kitchen: /usr/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2018-02-23T18:44:38.608575 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:497:in `action'
+E, [2018-02-23T18:44:38.608605 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:389:in `converge_action'
+E, [2018-02-23T18:44:38.608638 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-02-23T18:44:38.608665 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `each'
+E, [2018-02-23T18:44:38.608691 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-02-23T18:44:38.608716 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2018-02-23T18:44:38.608743 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-02-23T18:44:38.608769 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-02-23T18:44:38.608804 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-02-23T18:44:38.608830 #52117] ERROR -- Kitchen: ----End Backtrace-----
+E, [2018-02-23T18:44:38.608854 #52117] ERROR -- Kitchen: ---Nested Exception---
+E, [2018-02-23T18:44:38.608881 #52117] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2018-02-23T18:44:38.608906 #52117] ERROR -- Kitchen: Message: SSH exited (2) for command: [          
+          
+          ANSIBLE_ROLES_PATH=/tmp/kitchen/roles sudo -E -s  ansible-playbook -i /tmp/kitchen/hosts  -c local -M /tmp/kitchen/modules          /tmp/kitchen/playbook.yml
+]
+E, [2018-02-23T18:44:38.608936 #52117] ERROR -- Kitchen: ----------------------
+E, [2018-02-23T18:44:38.608960 #52117] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-02-23T18:44:38.608984 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/provisioner/base.rb:91:in `rescue in call'
+E, [2018-02-23T18:44:38.609020 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/provisioner/base.rb:67:in `call'
+E, [2018-02-23T18:44:38.609055 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:393:in `block in converge_action'
+E, [2018-02-23T18:44:38.609085 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-02-23T18:44:38.609112 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-02-23T18:44:38.609142 #52117] ERROR -- Kitchen: /usr/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2018-02-23T18:44:38.609170 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:497:in `action'
+E, [2018-02-23T18:44:38.609196 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:389:in `converge_action'
+E, [2018-02-23T18:44:38.609232 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-02-23T18:44:38.609259 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `each'
+E, [2018-02-23T18:44:38.609285 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-02-23T18:44:38.609314 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2018-02-23T18:44:38.609339 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-02-23T18:44:38.609364 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-02-23T18:44:38.609389 #52117] ERROR -- Kitchen: /home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/vendor/bundle/ruby/2.5.0/gems/test-kitchen-1.20.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-02-23T18:44:38.609421 #52117] ERROR -- Kitchen: ----End Backtrace-----

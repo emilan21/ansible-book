@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: "/home/emilan/dev_work/ansible-book/ansible-wordpress/provisioning/.kitchen/kitchen-vagrant/kitchen-provisioning-default-ubuntu/.vagrant/machines/default/virtualbox/private_key"
+last_action: create
+last_error: Kitchen::ActionFailed

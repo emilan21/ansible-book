@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+          - apt: name=nginx state=installed
+          - service: name=nginx state=restarted

@@ -1,0 +1,15 @@
+---
+- name: Install WordPress
+  hosts: tag_project_AnsibleWordPress
+  become: true
+  tasks:
+          - ping:
+  roles:
+          - role: mheap.wordpress
+            database_name: michaelwp
+            database_user: michaelwp
+            database_password: bananas18374
+            wp_domain: aws.example.com
+            initial_post_title: Hey There
+            initial_post_content: >
+                    This is running on AWS

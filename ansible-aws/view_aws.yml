@@ -1,0 +1,12 @@
+---
+- name: View AWS Machines
+  hosts: all
+  connection: local
+  gather_facts: False
+  tasks:
+          - ec2_remote_facts:
+                  region: us-east-1
+                  filters:
+                          "instance-state-name": running
+            register: instance_list
+          - debug: var=instance_list
